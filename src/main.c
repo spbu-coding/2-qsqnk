@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-void bubble_sort(long long int* array_of_numbers, int array_length) {
+/*void bubble_sort(long long int* array_of_numbers, int array_length) {
     for (int i = 0; i < array_length - 1; i++) {
         for (int j = 0; j < array_length - i - 1; j++) {
             if (array_of_numbers[j] > array_of_numbers[j + 1]) {
@@ -15,7 +15,9 @@ void bubble_sort(long long int* array_of_numbers, int array_length) {
         }
 
     }
-}
+}*/
+
+extern void bubble_sort(long long int* array_of_numbers, int array_length);
 
 bool check_for_same_arguments(char* first_argument, char* second_argument) {
     if (strlen(first_argument) >= strlen("--to=") && strlen(second_argument) >= strlen("--to=")) {
