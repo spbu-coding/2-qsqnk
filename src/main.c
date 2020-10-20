@@ -60,8 +60,8 @@ char* get_type_of_argument(char* argument) {
 
 void scan_arguments(int count_of_arguments, char** arguments,
                     long long int* from, long long int* to, bool* is_from, bool* is_to) {
-    long long int temp_from = -1;
-    long long int temp_to = -1;
+    long long int temp_from = 0;
+    long long int temp_to = 0;
     for (int i = 0; i < count_of_arguments; i++) {
         if (is_argument_correct(arguments[i])) {
             if (strcmp(get_type_of_argument(arguments[i]), "--from=") == 0) {
